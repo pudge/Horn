@@ -2,7 +2,7 @@
 //  HornTests.swift
 //  HornTests
 //
-//  Created by Chris Nandor on 2014.11.17.
+//  Created by Chris Nandor on 2014.11.10.
 //  Copyright (c) 2014 Pudge.Net. All rights reserved.
 //
 
@@ -10,10 +10,11 @@ import UIKit
 import XCTest
 
 class HornTests: XCTestCase {
-    
+    var singleton:HornSingleton?
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        singleton = HornSingleton()
     }
     
     override func tearDown() {

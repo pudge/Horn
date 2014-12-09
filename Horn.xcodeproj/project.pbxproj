@@ -7,11 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6D78701A1AC94E00D93C4E /* HornSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D78691A1AC94E00D93C4E /* HornSingleton.swift */; };
+		4D6D78711A1AC94E00D93C4E /* HornSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D78691A1AC94E00D93C4E /* HornSingleton.swift */; };
+		4D6D78721A1AC94E00D93C4E /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786A1A1AC94E00D93C4E /* Control.swift */; };
+		4D6D78731A1AC94E00D93C4E /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786A1A1AC94E00D93C4E /* Control.swift */; };
+		4D6D78741A1AC94E00D93C4E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786B1A1AC94E00D93C4E /* Team.swift */; };
+		4D6D78751A1AC94E00D93C4E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786B1A1AC94E00D93C4E /* Team.swift */; };
+		4D6D78761A1AC94E00D93C4E /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786C1A1AC94E00D93C4E /* Teams.swift */; };
+		4D6D78771A1AC94E00D93C4E /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786C1A1AC94E00D93C4E /* Teams.swift */; };
+		4D6D78781A1AC94E00D93C4E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786D1A1AC94E00D93C4E /* Track.swift */; };
+		4D6D78791A1AC94E00D93C4E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786D1A1AC94E00D93C4E /* Track.swift */; };
+		4D6D787A1A1AC94E00D93C4E /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786E1A1AC94E00D93C4E /* Tracks.swift */; };
+		4D6D787B1A1AC94E00D93C4E /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786E1A1AC94E00D93C4E /* Tracks.swift */; };
+		4D6D787C1A1AC94E00D93C4E /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786F1A1AC94E00D93C4E /* URLSession.swift */; };
+		4D6D787D1A1AC94E00D93C4E /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D786F1A1AC94E00D93C4E /* URLSession.swift */; };
+		4D6D787E1A1ACAD700D93C4E /* HornViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE644061A1A3F0B0085D76C /* HornViewController.swift */; };
+		4D6D78801A1ACED900D93C4E /* HornSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D787F1A1ACED900D93C4E /* HornSettingsViewController.swift */; };
+		4D6D78811A1ACED900D93C4E /* HornSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D787F1A1ACED900D93C4E /* HornSettingsViewController.swift */; };
+		4D6D78831A1AD02600D93C4E /* HornSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D78821A1AD02600D93C4E /* HornSongViewController.swift */; };
+		4D6D78841A1AD02600D93C4E /* HornSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6D78821A1AD02600D93C4E /* HornSongViewController.swift */; };
 		4DE644051A1A3F0B0085D76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE644041A1A3F0B0085D76C /* AppDelegate.swift */; };
-		4DE644071A1A3F0B0085D76C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE644061A1A3F0B0085D76C /* ViewController.swift */; };
+		4DE644071A1A3F0B0085D76C /* HornViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE644061A1A3F0B0085D76C /* HornViewController.swift */; };
 		4DE6440A1A1A3F0B0085D76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE644081A1A3F0B0085D76C /* Main.storyboard */; };
 		4DE6440C1A1A3F0B0085D76C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE6440B1A1A3F0B0085D76C /* Images.xcassets */; };
-		4DE6440F1A1A3F0B0085D76C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE6440D1A1A3F0B0085D76C /* LaunchScreen.xib */; };
 		4DE6441B1A1A3F0C0085D76C /* HornTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6441A1A1A3F0C0085D76C /* HornTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D6D78691A1AC94E00D93C4E /* HornSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HornSingleton.swift; sourceTree = "<group>"; };
+		4D6D786A1A1AC94E00D93C4E /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		4D6D786B1A1AC94E00D93C4E /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4D6D786C1A1AC94E00D93C4E /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		4D6D786D1A1AC94E00D93C4E /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		4D6D786E1A1AC94E00D93C4E /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		4D6D786F1A1AC94E00D93C4E /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		4D6D787F1A1ACED900D93C4E /* HornSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HornSettingsViewController.swift; sourceTree = "<group>"; };
+		4D6D78821A1AD02600D93C4E /* HornSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HornSongViewController.swift; sourceTree = "<group>"; };
 		4DE643FF1A1A3F0B0085D76C /* Horn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE644031A1A3F0B0085D76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE644041A1A3F0B0085D76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DE644061A1A3F0B0085D76C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DE644061A1A3F0B0085D76C /* HornViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HornViewController.swift; sourceTree = "<group>"; };
 		4DE644091A1A3F0B0085D76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE6440B1A1A3F0B0085D76C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4DE6440E1A1A3F0B0085D76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4DE644141A1A3F0C0085D76C /* HornTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HornTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE644191A1A3F0C0085D76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE6441A1A1A3F0C0085D76C /* HornTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HornTests.swift; sourceTree = "<group>"; };
@@ -56,6 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D6D78671A1AC91400D93C4E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DE644061A1A3F0B0085D76C /* HornViewController.swift */,
+				4D6D787F1A1ACED900D93C4E /* HornSettingsViewController.swift */,
+				4D6D78821A1AD02600D93C4E /* HornSongViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4D6D78681A1AC91C00D93C4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D6D78691A1AC94E00D93C4E /* HornSingleton.swift */,
+				4D6D786A1A1AC94E00D93C4E /* Control.swift */,
+				4D6D786B1A1AC94E00D93C4E /* Team.swift */,
+				4D6D786C1A1AC94E00D93C4E /* Teams.swift */,
+				4D6D786D1A1AC94E00D93C4E /* Track.swift */,
+				4D6D786E1A1AC94E00D93C4E /* Tracks.swift */,
+				4D6D786F1A1AC94E00D93C4E /* URLSession.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4DE643F61A1A3F0B0085D76C = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				4DE644041A1A3F0B0085D76C /* AppDelegate.swift */,
-				4DE644061A1A3F0B0085D76C /* ViewController.swift */,
 				4DE644081A1A3F0B0085D76C /* Main.storyboard */,
+				4D6D78671A1AC91400D93C4E /* View Controllers */,
+				4D6D78681A1AC91C00D93C4E /* Model */,
 				4DE6440B1A1A3F0B0085D76C /* Images.xcassets */,
-				4DE6440D1A1A3F0B0085D76C /* LaunchScreen.xib */,
 				4DE644021A1A3F0B0085D76C /* Supporting Files */,
 			);
 			path = Horn;
@@ -161,6 +211,7 @@
 				TargetAttributes = {
 					4DE643FE1A1A3F0B0085D76C = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2A6737W8QG;
 					};
 					4DE644131A1A3F0C0085D76C = {
 						CreatedOnToolsVersion = 6.1;
@@ -193,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE6440A1A1A3F0B0085D76C /* Main.storyboard in Resources */,
-				4DE6440F1A1A3F0B0085D76C /* LaunchScreen.xib in Resources */,
 				4DE6440C1A1A3F0B0085D76C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +262,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DE644071A1A3F0B0085D76C /* ViewController.swift in Sources */,
+				4D6D78761A1AC94E00D93C4E /* Teams.swift in Sources */,
+				4DE644071A1A3F0B0085D76C /* HornViewController.swift in Sources */,
+				4D6D78721A1AC94E00D93C4E /* Control.swift in Sources */,
+				4D6D78801A1ACED900D93C4E /* HornSettingsViewController.swift in Sources */,
+				4D6D78701A1AC94E00D93C4E /* HornSingleton.swift in Sources */,
+				4D6D78741A1AC94E00D93C4E /* Team.swift in Sources */,
+				4D6D787C1A1AC94E00D93C4E /* URLSession.swift in Sources */,
 				4DE644051A1A3F0B0085D76C /* AppDelegate.swift in Sources */,
+				4D6D78831A1AD02600D93C4E /* HornSongViewController.swift in Sources */,
+				4D6D78781A1AC94E00D93C4E /* Track.swift in Sources */,
+				4D6D787A1A1AC94E00D93C4E /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6D78751A1AC94E00D93C4E /* Team.swift in Sources */,
+				4D6D78771A1AC94E00D93C4E /* Teams.swift in Sources */,
+				4D6D787E1A1ACAD700D93C4E /* HornViewController.swift in Sources */,
+				4D6D78811A1ACED900D93C4E /* HornSettingsViewController.swift in Sources */,
+				4D6D787D1A1AC94E00D93C4E /* URLSession.swift in Sources */,
 				4DE6441B1A1A3F0C0085D76C /* HornTests.swift in Sources */,
+				4D6D78711A1AC94E00D93C4E /* HornSingleton.swift in Sources */,
+				4D6D78731A1AC94E00D93C4E /* Control.swift in Sources */,
+				4D6D78841A1AD02600D93C4E /* HornSongViewController.swift in Sources */,
+				4D6D78791A1AC94E00D93C4E /* Track.swift in Sources */,
+				4D6D787B1A1AC94E00D93C4E /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +311,6 @@
 				4DE644091A1A3F0B0085D76C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4DE6440D1A1A3F0B0085D76C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DE6440E1A1A3F0B0085D76C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,6 +402,7 @@
 				INFOPLIST_FILE = Horn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,6 +413,7 @@
 				INFOPLIST_FILE = Horn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -407,6 +470,7 @@
 				4DE644201A1A3F0C0085D76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE644211A1A3F0C0085D76C /* Build configuration list for PBXNativeTarget "HornTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +479,7 @@
 				4DE644231A1A3F0C0085D76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
