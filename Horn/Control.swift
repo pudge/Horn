@@ -27,7 +27,7 @@ class Control:NSObject {
     }
     
     func stop() {
-        self.session.makeRequest(baseURL, with:"horn=off")
+        self.session.makeRequest(baseURL, with:"horn=off&ajax=1")
     }
 }
 
