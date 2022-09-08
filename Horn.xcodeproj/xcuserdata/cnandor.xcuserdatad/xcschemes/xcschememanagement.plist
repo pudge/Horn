@@ -4,14 +4,59 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Horn WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Horn.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>HornTV.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>HornWatch (Glance).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>HornWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4D385A0C1D18CF590095BB31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D385A1C1D18CF590095BB31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D385A271D18CF590095BB31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D385A361D18CFA70095BB31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DD979021AD97B77001DD816</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4DE643FE1A1A3F0B0085D76C</key>
 		<dict>
 			<key>primary</key>

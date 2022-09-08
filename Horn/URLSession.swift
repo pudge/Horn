@@ -8,13 +8,14 @@
 
 import Foundation
 
-var session = NSURLSession.sharedSession()
+var session = Foundation.URLSession.shared
 
 class URLSession:NSObject {
     var debug = false
     var test = false
+    var dataTask = URLSessionDataTask()
 
-    func makeRequest(baseURL:String, with:String) {
+    func makeRequest(_ baseURL:String, with:String) {
         if (self.debug) {
             NSLog("%@?%@", baseURL, with)
         }
@@ -22,8 +23,21 @@ class URLSession:NSObject {
             return
         }
 
-        var url = NSURL(string: "\(baseURL)?\(with)")
-        var dataTask = session.dataTaskWithURL(url!)
-        dataTask.resume()
+        let url = URL(string: "\(baseURL)?\(with)")
+        self.dataTask = session.dataTask(with: url!)//, completionHandler: myHandler)
+        //(with: url!)
+        self.dataTask.resume()
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:  #selector(URLSession.cancelData), userInfo: nil, repeats: false)
     }
+
+    @objc func cancelData() {
+        if (self.debug) {
+            NSLog("canceling task")
+        }
+        self.dataTask.cancel()
+    }
+}
+
+func myHandler() -> Void {
+    NSLog("foo")
 }

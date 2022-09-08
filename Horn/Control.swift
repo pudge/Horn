@@ -8,26 +8,41 @@
 
 import Foundation
 
-let baseURL = "http://__USER__:__PASSWORD__@__HOST__/cgi-bin/horn2.cgi";
+let baseURL = "http://dev.pudge.net/cgi-bin/horn.cgi";
+//let baseURL = "http://__USER__:__PASSWORD__@__HOST__/cgi-bin/horn2.cgi";
 let baseParams = "ajax=1&style=old";
 
 class Control:NSObject {
+    var singleton = HornSingleton()
     var session = URLSession()
+    var playSound = PlaySound()
     
-    func playTrack(name:String, isQuiet:Bool) {
-        var quiet = isQuiet ? "1" : "0"
-        var params = "\(baseParams)&quiet=\(quiet)&horn=dirty&song=\(name)"
-        self.session.makeRequest(baseURL, with:params)
+    func playTrack(_ name:String, isQuiet:Bool) {
+        if (singleton.hornGlobal) {
+            let quiet = isQuiet ? "1" : "0"
+            let params = "\(baseParams)&quiet=\(quiet)&horn=dirty&song=\(name)"
+            self.session.makeRequest(baseURL, with:params)
+        }
     }
     
-    func playHorn(play: Bool, withTeam: String, isQuiet: Bool) {
-        var quiet = isQuiet ? "1" : "0"
-        var params = "\(baseParams)&\(withTeam)=1&quiet=\(quiet)&horn=on"
-        self.session.makeRequest(baseURL, with:params)
+    func playHorn(_ play: Bool, team: Team, isQuiet: Bool) {
+        if (singleton.hornGlobal) {
+            let quiet = isQuiet ? "1" : "0"
+            let withTeam = team.shortname
+            let params = "\(baseParams)&\(withTeam)=1&quiet=\(quiet)&horn=on"
+            self.session.makeRequest(baseURL, with:params)
+        }
+
+        if (singleton.hornLocal) {
+            playSound.play()
+        }
     }
     
     func stop() {
         self.session.makeRequest(baseURL, with:"horn=off&ajax=1")
+        if (singleton.hornLocal) {
+            playSound.stop()
+        }
     }
 }
 

@@ -8,36 +8,56 @@
 
 import Foundation
 
-let defaults = NSUserDefaults.standardUserDefaults()
+let defaults = UserDefaults.standard
 
 class HornSingleton:NSObject {
     var hornQuiet:Bool {
         set {
-            defaults.setBool(newValue, forKey: "hornQuiet")
+            defaults.set(newValue, forKey: "hornQuiet")
             defaults.synchronize()
         }
         get {
-            return defaults.boolForKey("hornQuiet")
+            return defaults.bool(forKey: "hornQuiet")
         }
     }
-
-    var teamIndex:Int {
+    
+    var hornLocal:Bool {
         set {
-            defaults.setInteger(newValue, forKey: "teamIndex")
+            defaults.set(newValue, forKey: "hornLocal")
             defaults.synchronize()
         }
         get {
-            return defaults.integerForKey("teamIndex")
+            return defaults.bool(forKey: "hornLocal")
+        }
+    }
+    
+    var hornGlobal:Bool {
+        set {
+            defaults.set(newValue, forKey: "hornGlobal")
+            defaults.synchronize()
+        }
+        get {
+            return defaults.bool(forKey: "hornGlobal")
+        }
+    }
+    
+    var teamIndex:Int {
+        set {
+            defaults.set(newValue, forKey: "teamIndex")
+            defaults.synchronize()
+        }
+        get {
+            return defaults.integer(forKey: "teamIndex")
         }
     }
 
     var song:String {
         set {
-            defaults.setObject(newValue, forKey: "song")
+            defaults.set(newValue, forKey: "song")
             defaults.synchronize()
         }
         get {
-            return defaults.stringForKey("song") ?? ""
+            return defaults.string(forKey: "song") ?? ""
         }
     }
 }

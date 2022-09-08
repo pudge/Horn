@@ -8,39 +8,39 @@
 
 import UIKit
 
-class HornSongViewController:UIViewController {
+class HornSongViewController:UIViewController, UITableViewDelegate, UITableViewDataSource {
     var singleton = HornSingleton()
     var control = Control()
     var tracks = Tracks()
 
-    func tableView(tableView:UITableView, cellForRowAtIndexPath:NSIndexPath) -> UITableViewCell {
-        var CellIdentifier = "SongCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier) as UITableViewCell?
+    func tableView(_ tableView:UITableView, cellForRowAt:IndexPath) -> UITableViewCell {
+        let CellIdentifier = "SongCell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier)
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: CellIdentifier)
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: CellIdentifier)
         }
 
-        var track = self.tracks[cellForRowAtIndexPath.row]
+        let track = self.tracks[cellForRowAt.row]
         cell?.textLabel?.text = track.name
         
         return cell!
     }
     
-    func tableView(tableView:UITableView, didSelectRowAtIndexPath:NSIndexPath) {
-        var track = self.tracks[didSelectRowAtIndexPath.row]
+    func tableView(_ tableView:UITableView, didSelectRowAt:IndexPath) {
+        let track = self.tracks[didSelectRowAt.row]
         self.singleton.song = track.shortname
         
         self.control.playTrack(track.shortname, isQuiet:self.singleton.hornQuiet)
         
-        self.performSegueWithIdentifier("unwindToRootController", sender: self)
+        self.performSegue(withIdentifier: "unwindToRootController", sender: self)
     }
     
-    func tableView(tableView:UITableView, numberOfRowsInSection:NSInteger) -> NSInteger {
+    func tableView(_ tableView:UITableView, numberOfRowsInSection:NSInteger) -> NSInteger {
         return self.tracks.count()
     }
     
     
-    func numberOfSectionsInTableView(tableView:UITableView) -> NSInteger {
+    func numberOfSections(in tableView:UITableView) -> NSInteger {
         return 1
     }
 }
